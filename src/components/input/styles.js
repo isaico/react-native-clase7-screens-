@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import colors from '../../constants/colors'
 
 export const styles = StyleSheet.create({
     inputContainer: {
@@ -12,12 +13,12 @@ export const styles = StyleSheet.create({
     input: {
         width: '80%',
         borderBottomWidth: 1,
-        borderBottomColor: '#47A5AE',
+        borderBottomColor: colors.primary,
         paddingVertical: 10,
         fontSize: 20,
         fontWeight:'bold',
         
     },
 });
-export const placeholderTextColor = '#cccccc'
-export const buttonColor='#47A5AE'
+export const placeholderTextColor = colors.placeholder
+export const buttonColor= colors.primary

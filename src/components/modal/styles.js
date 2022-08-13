@@ -1,4 +1,6 @@
 import { StyleSheet } from "react-native"
+import colors from '../../constants/colors'
+
 
 export const styles = StyleSheet.create({
     modalContentContainer: {
@@ -8,14 +10,14 @@ export const styles = StyleSheet.create({
       },
       modalTitle: {
         fontSize: 20,
-        color:'#FF9C71'
+        color:colors.modalPrimary
       },
       modalMessage: {
         fontSize: 16,
       },
       modalItem: {
         fontSize: 20,
-        color: '#FF9C71',
+        color: colors.modalPrimary,
         fontWeight: 'bold',
       },
       modalButton: {
@@ -27,6 +29,6 @@ export const styles = StyleSheet.create({
       modal: {
         flex: 1,
         paddingTop: 30,
-        backgroundColor:'#F2F0D8'
+        backgroundColor:colors.background
       }
 })

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import colors from '../../constants/colors'
 
 export const styles = StyleSheet.create({
   itemContainer: {
@@ -7,7 +8,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginVertical: 10,
-    backgroundColor: '#47A5AE',
+    backgroundColor: colors.primary,
     padding: 20,
     borderRadius: 7,
     shadowColor: '#000',
@@ -21,11 +22,11 @@ export const styles = StyleSheet.create({
   },
   item: {
     fontSize: 20,
-    color: '#ffffff',
-    fontWeight:"bold"
+    color: colors.white,
+    fontFamily:'RubikRegular'
   },
   btn: {
-    color: '#ffffff',
+    color: colors.white,
     fontSize: 20,
     fontWeight:'bold'
   },

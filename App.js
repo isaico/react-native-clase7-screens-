@@ -3,6 +3,8 @@ import { SafeAreaView } from 'react-native';
 import { styles } from './src/generalStyles';
 // import  MainView  from './src/screens/index'
 import { MainView, CheckList } from './src/screens/index';
+import {useFonts} from 'expo-font'
+import AppLoading from 'expo-app-loading';
 
 export default function App() {
     /* ---------------------------------- HOOKS --------------------------------- */
@@ -11,6 +13,11 @@ export default function App() {
     const [checkItems, setCheckItems] = useState([]);
     const [itemList, setItemList] = useState([]); //
     const [item, setItem] = useState(''); //
+    /* ---------------------------------- fonts --------------------------------- */
+    const [loaded]=useFonts({
+      RubikRegular:require('./assets/fonts/Rubik-Regular.ttf')
+    })
+    if (!loaded) return <AppLoading />
     const inputValue = item.trim();
 
     const addItem = () => {

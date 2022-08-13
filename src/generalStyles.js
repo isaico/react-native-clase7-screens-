@@ -1,13 +1,14 @@
 import { StyleSheet } from "react-native";
+import colors from "./constants/colors";
 
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#F2F0D8',
+      backgroundColor: colors.background,
       paddingTop:50,
     },
     itemList: {
-      backgroundColor: '#F2F0D8',
+      backgroundColor: colors.background,
       flex: 1,
       marginVertical: 20,
       marginHorizontal: 20,
